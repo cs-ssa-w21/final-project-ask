@@ -1,11 +1,14 @@
 # Mask-Free vs. Mask-Up Tweets and COVID Cases by County in the U.S.
 
-For our project, we use two sources of data: 
+For our project, we use three major sources of data: 
 (1) Twitter data collected from the free Twitter API 
-([TweePy](https://docs.tweepy.org/en/latest/)), and (2) the 
+([TweePy](https://docs.tweepy.org/en/latest/)), (2) the 
 [Johns Hopkins COVID-19 data map](https://coronavirus.jhu.edu/us-map), 
 which lists COVID-19 cases and testing rates on a county 
-basis. The goal of the project is to study the link 
+basis, and (3) the 
+[New York Times Mask Usage Data](https://github.com/nytimes/covid-19-data/tree/master/mask-use),
+which provides estimates of mask usage by county.
+The goal of the project is to study the link 
 between following CDC recommended protocol of wearing a 
 mask, and the rate of COVID-19 cases in a given county. 
 
