@@ -2,7 +2,8 @@
 
 For our project, we use two sources of data: 
 (1) Twitter data collected from the free Twitter API 
-(TweePy), and (2) the Johns Hopkins COVID-19 data map, 
+([TweePy](https://docs.tweepy.org/en/latest/)), and (2) the 
+[Johns Hopkins COVID-19 data map](https://coronavirus.jhu.edu/us-map), 
 which lists COVID-19 cases and testing rates on a county 
 basis. The goal of the project is to study the link 
 between following CDC recommended protocol of wearing a 
@@ -18,7 +19,10 @@ the hashtag #maskfree on Twitter, which is generally
 used to indicate that a person does not wear a facial 
 covering outside. We also look at the use of "mask up" and
 the hashtag #maskup on Twitter to look at users who likely
-wear a facial covering outside.
+wear a facial covering outside. We supplement the collected
+Twitter data with the [New York Times Mask Usage by County
+dataset](https://github.com/nytimes/covid-19-data/tree/master/mask-use)
+from GitHub.
 
 
 The geotag information was scraped from users who 
@@ -53,6 +57,8 @@ Use the package manager [pip](https://pip.pypa.io/en/stable/) to install TweePy.
 6. twitter_maskup.ipynb
 
 7. time_series_covid19_confirmed_US.csv
+   
+8. mask-use-by-county.csv
 
 
 ## Links to Data Sources
@@ -65,3 +71,5 @@ Use the package manager [pip](https://pip.pypa.io/en/stable/) to install TweePy.
 [U.S. County Boundaries](https://public.opendatasoft.com/explore/dataset/us-county-boundaries/table/?disjunctive.statefp&disjunctive.countyfp&disjunctive.name&disjunctive.namelsad&disjunctive.stusab&disjunctive.state_name&fbclid=IwAR1bdkKaU6G0TLlCf2D4JhMfBxil_OuiOjTHZhZBFLksVixS8NKhFQ31SC4)
 
 [Education Level by County](https://data.ers.usda.gov/reports.aspx?ID=17829)
+
+[New York Times Mask Usage Data](https://github.com/nytimes/covid-19-data/tree/master/mask-use)
