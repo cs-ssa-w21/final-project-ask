@@ -154,7 +154,9 @@ to COVID-19 cases in each county.
 ## Links to Data Sources
 [TweePy](https://docs.tweepy.org/en/latest/)
 
-[Johns Hopkins COVID-19 data map](https://coronavirus.jhu.edu/us-map)
+[Johns Hopkins COVID-19 Data Map](https://coronavirus.jhu.edu/us-map)
+
+[Johns Hopkins Time Series Data](https://github.com/CSSEGISandData/COVID-19/tree/master/csse_covid_19_data/csse_covid_19_time_series)
 
 [Density by County](https://en.wikipedia.org/wiki/County_statistics_of_the_United_States?fbclid=IwAR0zDzgZUOOdi4MkaWOu2MBOth7gOTqflmRgqePkPm-ZFh-NigKllrq7YgA)
 
