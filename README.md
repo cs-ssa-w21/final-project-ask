@@ -27,25 +27,29 @@ Twitter data with the [New York Times Mask Usage by County
 dataset](https://github.com/nytimes/covid-19-data/tree/master/mask-use)
 from GitHub.
 
-
 The geotag information was scraped from users who 
 include these phrases and/or hashtags in their tweets in 
 order to relate mask compliance to the amount of cases 
 during a specified period of time (two-week intervals) 
 as reported by the Johns Hopkins database. Lastly, 
-we use Geopandas/folium to visually map the 
+we use data visualization techniques
+(Seaborn, Geopandas, Folium) to visually map the 
 density of "mask free" and "mask up" usage by location, 
 and supplement the Twitter data with charts that display 
 the relationship between mask compliance and COVID-19 cases.
 
 ## Installation
 
-Use the package manager [pip](https://pip.pypa.io/en/stable/) to install TweePy.
+Use the package manager [pip](https://pip.pypa.io/en/stable/)
+to install TweePy.
 
 ```bash
-!pip install tweepy
+pip install tweepy
 ```
-
+You can also use the package manager to install Seaborn.
+```bash
+pip install seaborn
+```
 ## Instructions on Usage
 **INCLUDE INSTRUCTIONS HERE**
 
@@ -108,9 +112,10 @@ a slice of the tweet, and the tweet as text. This csv file
 is merged with the New York Times Mask Usage data and the
 Johns Hopkins COVID-19 data.
 
-8. Final_proj_covid_scraping.ipynb
+8. data_cleaning_for_analysis.ipynb
 
-This ipynb file merges together the Twitter data 
+This ipynb file merges together the 'mask-free' and
+'mask-up' Twitter data collected 
 (cleaned_maskfree_tweets.csv and cleaned_maskup_tweets.csv)
 with the county data (county_info_new.csv) in order to gather 
 the FIPS county codes and map education rates. 
