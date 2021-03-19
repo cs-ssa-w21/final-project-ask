@@ -1,4 +1,4 @@
-# Mask-Free vs. Mask-Up Tweets and COVID Cases by County in the U.S.
+# _Mask-Free vs. Mask-Up Tweets and COVID Cases by County in the U.S._
 
 For our project, we use three major sources of data: 
 (1) Twitter data collected from the free Twitter API 
@@ -46,23 +46,83 @@ Use the package manager [pip](https://pip.pypa.io/en/stable/) to install TweePy.
 !pip install tweepy
 ```
 
+## Instructions on Usage
+**INCLUDE INSTRUCTIONS HERE**
+
+(INCLUDE STEP BY STEP HOW TO ARRIVE TO THE ANALYSIS)
+
 ## Files
-1. cleaned_maskfree_tweets.csv
 
-2. cleaned_maskup_tweets.csv
+1. county_info_new.csv: 
 
-3. cleaned_tweets_finalquery.csv
+This csv file contains the information of all the 
+counties used in the project. In this csv file, there 
+is a column for the county name, the state where the 
+county resides, the population density, the education rate,
+the tier of the county based on education rate, the latitude
+and longitude location, and the FIPS county code.
 
-4. county_info.csv
+2. mask-use-by-county.csv
 
-5. twitter_maskfree.ipynb
+This csv file contains the estimated percentages of mask use
+by county in the U.S. In this csv file, there is a column for
+the FIPS county code and columns for how often the population
+wears a mask (Never, Rarely, Sometimes, Frequently, or Always).
+This csv file is used to supplement the Twitter data.
 
-6. twitter_maskup.ipynb
+3. time_series_covid19_confirmed_US.csv
 
-7. time_series_covid19_confirmed_US.csv
+This csv file contains information about time series data for 
+all counties within the U.S. In this csv file, there are 
+columns for the FIPS county code, the county name, the state
+where the county is located, the latitude and longitude, and 
+COVID-19 cases in each county between the dates 1/22/20 and
+3/16/21. This csv file is used to analyze the number of
+COVID-19 cases by county.
+
+4. twitter_maskfree.ipynb
+
+**INSERT INFORMATION ABOUT THIS FILE**
+
+5. twitter_maskup.ipynb
+
+**INSERT INFORMATION ABOUT THIS FILE**
    
-8. mask-use-by-county.csv
+6. cleaned_maskfree_tweets.csv
 
+This csv file contains all the information scraped from
+Twitter (using TweePy) using the search 'mask free'. 
+In this csv file, there are columns for the county name,
+the original tweet, the tweets list, the tweet as a string,
+a slice of the tweet, and the tweet as text. This csv file
+is merged with the New York Times Mask Usage data and the
+Johns Hopkins COVID-19 data.
+
+7. cleaned_maskup_tweets.csv
+
+This csv file contains all the information scraped from
+Twitter (using TweePy) using the search 'mask up'.
+In this csv file, there are columns for the county name,
+the original tweet, the tweets list, the tweet as a string,
+a slice of the tweet, and the tweet as text. This csv file
+is merged with the New York Times Mask Usage data and the
+Johns Hopkins COVID-19 data.
+
+8. Final_proj_covid_scraping.ipynb
+
+This ipynb file merges together the Twitter data 
+(cleaned_maskfree_tweets.csv and cleaned_maskup_tweets.csv)
+with the county data (county_info_new.csv) in order to gather 
+the FIPS county codes and map education rates. 
+The file then merges together the 
+dataframe with the Johns Hopkins COVID-19 data 
+(time_series_covid19_confirmed_US.csv) in order to map
+COVID-19 cases to each county and each Tweet. Finally, the
+file merges the dataframe with the New York Times Mask Usage
+data (mask-use-by-county.csv), which looks at mask usage by 
+county. The final dataframe helps with the analysis of 
+'mask free' versus 'mask up' tweets against COVID-19 cases
+and county mask usage. 
 
 ## Links to Data Sources
 [TweePy](https://docs.tweepy.org/en/latest/)
