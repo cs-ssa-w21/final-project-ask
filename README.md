@@ -92,17 +92,26 @@ COVID-19 cases in each county between the dates 1/22/20 and
 3/16/21. This csv file is used to analyze the number of
 COVID-19 cases by county.
 
-**4. twitter_scraping.ipynb**
+**4. MASKFREE_twitter_scraping.ipynb**
 
-This ipynb file produces a dataframe of tweets for both 'mask free'
-and 'mask up' tweets published on Twitter. The file also deletes
+This ipynb file produces a dataframe of tweets for 'mask free'
+tweets published on Twitter. The file also deletes
 duplicates within the dataframe, leaving one copy of the duplicate
 tweet behind in the first county it appeared in. After deleting
 duplicates, the file then cleans the remaining tweets in the
 dataframe and saves the output into a csv file 
-(cleaned_tweets.csv).
+(cleaned_maskfree_tweets.csv).
 
-**5. cleaned_maskfree_tweets.csv**
+**5. MASKUP_twitter_scraping.ipynb**
+This ipynb file produces a dataframe of tweets for 'mask up'
+tweets published on Twitter. The file also deletes
+duplicates within the dataframe, leaving one copy of the duplicate
+tweet behind in the first county it appeared in. After deleting
+duplicates, the file then cleans the remaining tweets in the
+dataframe and saves the output into a csv file 
+(cleaned_maskup_tweets.csv).
+
+**6. cleaned_maskfree_tweets.csv**
 
 This csv file contains all the information scraped from
 Twitter (using TweePy) using the search 'mask free'. 
@@ -112,7 +121,7 @@ a slice of the tweet, and the tweet as text. This csv file
 is merged with the New York Times Mask Usage data and the
 Johns Hopkins COVID-19 data.
 
-**6. cleaned_maskup_tweets.csv**
+**7. cleaned_maskup_tweets.csv**
 
 This csv file contains all the information scraped from
 Twitter (using TweePy) using the search 'mask up'.
@@ -122,7 +131,7 @@ a slice of the tweet, and the tweet as text. This csv file
 is merged with the New York Times Mask Usage data and the
 Johns Hopkins COVID-19 data.
 
-**7. data_cleaning_for_analysis.ipynb**
+**8. data_cleaning_for_analysis.ipynb**
 
 This ipynb file merges together the 'mask-free' and
 'mask-up' Twitter data collected 
@@ -139,7 +148,7 @@ county. The final dataframe helps with the analysis of
 'mask free' versus 'mask up' tweets against COVID-19 cases
 and county mask usage. 
 
-**8. finalproj_dataviz.ipynb**
+**9. finalproj_dataviz.ipynb**
 
 This ipynb file uses pandas, matplotlib, numpy, and seaborn to 
 help create visualizations of our final dataset. Our visualizations 
