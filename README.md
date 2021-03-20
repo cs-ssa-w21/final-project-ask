@@ -60,10 +60,10 @@ We used Google Drive to upload some of these files.
 
 ## Instructions on Usage
 1. Run the MASKFREE_twitter_scraping.ipynb file
-to gather all of the mask-free Tweets.
+to gather all the mask-free Tweets.
    
 2. Run the MASKUP_twitter_scraping.ipynb file
-to gather all of the mask-up Tweets
+to gather all the mask-up Tweets.
    
 3. Run the data_cleaning_for_analysis.ipynb to 
 merge the scraped Twitter dataframes with the COVID-19 
