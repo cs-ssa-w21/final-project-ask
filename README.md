@@ -110,7 +110,7 @@ duplicates within the dataframe, leaving one copy of the duplicate
 tweet behind in the first county it appeared in. After deleting
 duplicates, the file then cleans the remaining tweets in the
 dataframe and saves the output into a csv file 
-(cleaned_maskfree_tweets.csv).
+(cleaned_maskfree_large_tweets.csv).
 
 **5. MASKUP_twitter_scraping.ipynb**
 This ipynb file produces a dataframe of tweets for 'mask up'
@@ -119,12 +119,12 @@ duplicates within the dataframe, leaving one copy of the duplicate
 tweet behind in the first county it appeared in. After deleting
 duplicates, the file then cleans the remaining tweets in the
 dataframe and saves the output into a csv file 
-(cleaned_maskup_tweets.csv). 
+(cleaned_maskup_large_tweets.csv). 
 
 We created separate notebooks for 
 mask-free and mask-up due to the large file size of the outputs.
 
-**6. cleaned_maskfree_tweets.csv**
+**6. cleaned_maskfree_large_tweets.csv (Google Drive)**
 
 This csv file contains all the information scraped from
 Twitter (using TweePy) using the search 'mask free'. 
@@ -134,7 +134,7 @@ a slice of the tweet, and the tweet as text. This csv file
 is merged with the New York Times Mask Usage data and the
 Johns Hopkins COVID-19 data.
 
-**7. cleaned_maskup_tweets.csv**
+**7. cleaned_maskup_large_tweets.csv (Google Drive)**
 
 This csv file contains all the information scraped from
 Twitter (using TweePy) using the search 'mask up'.
