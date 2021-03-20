@@ -51,6 +51,11 @@ You can also use the package manager to install Seaborn.
 pip install seaborn
 ```
 
+You can also use the package manager to install Folium.
+```bash
+pip install folium
+```
+
 ## Link to Google Drive
 
 Some of our files are too large to upload to Github.
@@ -186,6 +191,9 @@ of 'mask free' versus 'mask up' Tweets, comparing the number of
 'mask free' versus 'mask up' tweets to COVID-19 cases in 
 each county, and comparing mask usage in each county compared
 to COVID-19 cases in each county.
+
+HTML files of the heatmap outputs are included (covid_map.html, 
+mask_free_map.html, mask_up_map.html)
 
 
 ## Links to Data Sources
