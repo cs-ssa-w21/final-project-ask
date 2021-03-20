@@ -147,8 +147,7 @@ Johns Hopkins COVID-19 data.
 **8. data_cleaning_for_analysis.ipynb**
 
 This ipynb file merges together the 'mask-free' and
-'mask-up' Twitter data collected 
-(cleaned_maskfree_tweets.csv and cleaned_maskup_tweets.csv)
+'mask-up' Twitter data collected
 with the county data (county_info_new.csv) in order to gather 
 the FIPS county codes and map education rates. 
 The file then merges together the 
