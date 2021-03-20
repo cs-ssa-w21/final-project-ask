@@ -140,6 +140,13 @@ the Johns Hopkins COVID-19 confirmed cases data, and the New
 York Times mask usage data. This file is very large, so it had
 to be uploaded to Google Drive.
 
+In order to replicate the results in the project, only the 
+usage_tweet_covid.csv file in the Google Drive should be used. 
+Due to the unpredictability of TweePy's rate limits that sometimes 
+results in different dataframe outputs for the same default "1000" 
+value, we cannot guarantee identical output of the file, so it is 
+difficult to reproduce exactly.
+
 **6. avg_data.csv**
 
 This csv file is a subset of the final dataset that includes the 
