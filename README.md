@@ -64,17 +64,13 @@ We used Google Drive to upload some of these files.
 [Google Drive Folder](https://drive.google.com/drive/u/1/folders/1EXtgLpPaTqfppwBEWyIJsrbgVAsv4Xew)
 
 ## Instructions on Usage
-1. Run the MASKFREE_twitter_scraping.ipynb file
-to gather all the mask-free Tweets.
-   
-2. Run the MASKUP_twitter_scraping.ipynb file
-to gather all the mask-up Tweets.
-   
-3. Run the data_cleaning_for_analysis.ipynb to 
+
+1. Run the collecting_and_cleaning_data.ipynb to scrape the
+Twitter Data using both "mask-free" and "mask-up" searches and
 merge the scraped Twitter dataframes with the COVID-19 
    confirmed cases dataframe and the NYT mask usage dataframe.
    
-4. Run the finalproj_dataviz.ipynb for data visualization
+2. Run the finalproj_dataviz.ipynb for data visualization
 and final analysis of the collected data.
 
 
@@ -107,55 +103,20 @@ COVID-19 cases in each county between the dates 1/22/20 and
 3/16/21. This csv file is used to analyze the number of
 COVID-19 cases by county.
 
-**4. MASKFREE_twitter_scraping.ipynb**
+**4. collecting_and_cleaning_data.ipynb**
 
 This ipynb file produces a dataframe of tweets for 'mask free'
-tweets published on Twitter. The file also deletes
+and 'mask up' tweets published on Twitter. The file also deletes
 duplicates within the dataframe, leaving one copy of the duplicate
 tweet behind in the first county it appeared in. After deleting
 duplicates, the file then cleans the remaining tweets in the
-dataframe and saves the output into a csv file 
-(cleaned_maskfree_large_tweets.csv).
+dataframe.
 
-**5. MASKUP_twitter_scraping.ipynb**
-This ipynb file produces a dataframe of tweets for 'mask up'
-tweets published on Twitter. The file also deletes
-duplicates within the dataframe, leaving one copy of the duplicate
-tweet behind in the first county it appeared in. After deleting
-duplicates, the file then cleans the remaining tweets in the
-dataframe and saves the output into a csv file 
-(cleaned_maskup_large_tweets.csv). 
-
-We created separate notebooks for 
-mask-free and mask-up due to the large file size of the outputs.
-
-**6. cleaned_maskfree_large_tweets.csv (Google Drive)**
-
-This csv file contains all the information scraped from
-Twitter (using TweePy) using the search 'mask free'. 
-In this csv file, there are columns for the county name,
-the original tweet, the tweets list, the tweet as a string,
-a slice of the tweet, and the tweet as text. This csv file
-is merged with the New York Times Mask Usage data and the
-Johns Hopkins COVID-19 data.
-
-**7. cleaned_maskup_large_tweets.csv (Google Drive)**
-
-This csv file contains all the information scraped from
-Twitter (using TweePy) using the search 'mask up'.
-In this csv file, there are columns for the county name,
-the original tweet, the tweets list, the tweet as a string,
-a slice of the tweet, and the tweet as text. This csv file
-is merged with the New York Times Mask Usage data and the
-Johns Hopkins COVID-19 data.
-
-**8. data_cleaning_for_analysis.ipynb**
-
-This ipynb file merges together the 'mask-free' and
+The file then merges together the 'mask-free' and
 'mask-up' Twitter data collected
 with the county data (county_info_new.csv) in order to gather 
 the FIPS county codes and map education rates. 
-The file then merges together the 
+The file merges together the 
 dataframe with the Johns Hopkins COVID-19 data 
 (time_series_covid19_confirmed_US.csv) in order to map
 COVID-19 cases to each county and each Tweet. Finally, the
@@ -165,7 +126,12 @@ county. The final dataframe helps with the analysis of
 'mask free' versus 'mask up' tweets against COVID-19 cases
 and county mask usage. 
 
-**9. usage_tweet_covid.csv (Google Drive)**
+There are three separate .csv file outputs (usage_tweet_covid.csv,
+usage_maskfree_covid.csv, usage_maskup_covid.csv), but only 
+usage_tweet_covid.csv is used in our analysis, as it is a combination
+of the mask-free and mask-up dataframes.
+
+**5. usage_tweet_covid.csv (Google Drive)**
 
 This csv file is the final dataset that is output from the 
 data_cleaning_for_analysis.ipynb. This file includes all the
@@ -174,14 +140,14 @@ the Johns Hopkins COVID-19 confirmed cases data, and the New
 York Times mask usage data. This file is very large, so it had
 to be uploaded to Google Drive.
 
-**10. avg_data.csv**
+**6. avg_data.csv**
 
 This csv file is a subset of the final dataset that includes the 
 most relevant columns. It also includes a column for the average
 mask compliance per county, as well as the average COVID-19 
 confirmed cases from 3/10/21 to 3/16/21 per county in the U.S.
 
-**11. finalproj_dataviz.ipynb**
+**7. finalproj_dataviz.ipynb**
 
 This ipynb file uses pandas, matplotlib, numpy, and seaborn to 
 help create visualizations of our final dataset. Our visualizations 
