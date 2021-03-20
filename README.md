@@ -59,9 +59,19 @@ We used Google Drive to upload some of these files.
 [Google Drive Folder](https://drive.google.com/drive/u/1/folders/1EXtgLpPaTqfppwBEWyIJsrbgVAsv4Xew)
 
 ## Instructions on Usage
-**INCLUDE INSTRUCTIONS HERE**
+1. Run the MASKFREE_twitter_scraping.ipynb file
+to gather all of the mask-free Tweets.
+   
+2. Run the MASKUP_twitter_scraping.ipynb file
+to gather all of the mask-up Tweets
+   
+3. Run the data_cleaning_for_analysis.ipynb to 
+merge the scraped Twitter dataframes with the COVID-19 
+   confirmed cases dataframe and the NYT mask usage dataframe.
+   
+4. Run the finalproj_dataviz.ipynb for data visualization
+and final analysis of the collected data.
 
-(INCLUDE STEP BY STEP HOW TO ARRIVE TO THE ANALYSIS)
 
 ## Files
 
@@ -109,7 +119,10 @@ duplicates within the dataframe, leaving one copy of the duplicate
 tweet behind in the first county it appeared in. After deleting
 duplicates, the file then cleans the remaining tweets in the
 dataframe and saves the output into a csv file 
-(cleaned_maskup_tweets.csv).
+(cleaned_maskup_tweets.csv). 
+
+We created separate notebooks for 
+mask-free and mask-up due to the large file size of the outputs.
 
 **6. cleaned_maskfree_tweets.csv**
 
@@ -148,7 +161,14 @@ county. The final dataframe helps with the analysis of
 'mask free' versus 'mask up' tweets against COVID-19 cases
 and county mask usage. 
 
-**9. finalproj_dataviz.ipynb**
+**9. avg_data.csv**
+
+This csv file is a subset of the final dataset that includes the 
+most relevant columns. It also includes a column for the average
+mask compliance per county, as well as the average COVID-19 
+confirmed cases from 3/10/21 to 3/16/21 per county in the U.S.
+
+**10. finalproj_dataviz.ipynb**
 
 This ipynb file uses pandas, matplotlib, numpy, and seaborn to 
 help create visualizations of our final dataset. Our visualizations 
