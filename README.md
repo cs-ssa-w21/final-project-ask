@@ -161,14 +161,23 @@ county. The final dataframe helps with the analysis of
 'mask free' versus 'mask up' tweets against COVID-19 cases
 and county mask usage. 
 
-**9. avg_data.csv**
+**9. usage_tweet_covid.csv (Google Drive)**
+
+This csv file is the final dataset that is output from the 
+data_cleaning_for_analysis.ipynb. This file includes all the
+scraped Twitter data (mask-free and mask-up), the county data,
+the Johns Hopkins COVID-19 confirmed cases data, and the New
+York Times mask usage data. This file is very large, so it had
+to be uploaded to Google Drive.
+
+**10. avg_data.csv**
 
 This csv file is a subset of the final dataset that includes the 
 most relevant columns. It also includes a column for the average
 mask compliance per county, as well as the average COVID-19 
 confirmed cases from 3/10/21 to 3/16/21 per county in the U.S.
 
-**10. finalproj_dataviz.ipynb**
+**11. finalproj_dataviz.ipynb**
 
 This ipynb file uses pandas, matplotlib, numpy, and seaborn to 
 help create visualizations of our final dataset. Our visualizations 
